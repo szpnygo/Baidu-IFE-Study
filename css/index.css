@@ -1,4 +1,5 @@
 * {  font: 16px/18px Helvetica, "Microsoft YaHei";  margin: 0;  padding: 0;  border: 0;  text-decoration: none;  list-style: none  }
+a { -webkit-transition: all .2s ease-in-out 0s; transition: all .2s ease-in-out 0s; }
 
 /* header */
 header {  background: url(../images/bg.jpg) no-repeat scroll right bottom / cover;  }
@@ -13,6 +14,13 @@ header nav ul li a {  line-height: 72px;  padding: 16px;  border-radius: 4px;  c
 header nav ul li a:hover {  background-color: rgba(0, 0, 0, .3);  }
 header article.v.ic {  width: 32px;  height: 32px;  line-height: 32px;  font-size: 32px;  position: absolute;  left: 50%;  bottom: 56px;  margin-left: -16px;  -webkit-animation: 1.7s ease 0s normal none infinite magic-mouse-icon;  }
 @-webkit-keyframes magic-mouse-icon { 0% {  opacity: 0;  } 30% {  opacity: 1;  } 100% {  bottom: 48px;  opacity: 0;  } }
+
+.follow {width: 256px;overflow: hidden}
+.follow li{margin: 4px 0;float: left}
+.follow li a{width: 252px;height: 60px;line-height: 64px;text-align: center;border: 2px solid rgba(0,0,0,.5); border-radius: 8px;font-size: 18px;display: block;color: #000000}
+.follow li a:hover{background: rgba(0,0,0,.5);border-color: transparent; color: #fff;}
+.follow li a:active{background: rgba(0,0,0,.8);}
+.follow li a i {font-size: 28px;}
 
 /* content */
 .content { text-align: center;}
@@ -44,3 +52,13 @@ footer a:hover {  text-decoration: underline;  }
 #f_footer{  text-align: center;  margin:50px 0;  padding-top:20px;  }
 #f_footer .ic{  font-size: 24px;  margin: 0 4px;  }
 #f_footer .ic:hover{  text-decoration: none;  }
+
+/* qrocde */
+.qrcode { width: 100%; background: rgba(0,0,0,.5); color: #333; position: fixed; top: 0; left: 0; z-index: 999;  display: none;}
+.qrcode .container { width: 240px; background-color: #fff; padding: 15px; position: absolute; top: 50%; left: 50%; margin: 135px 0 0 -135px; box-shadow: 0 0 20px #555; }
+.qrcode em { width: 240px; height: 240px; line-height: 240px; text-align: center; font-size: 230px; display: block; }
+.qrcode p { text-align: center; font-size: 13px; padding-top: 5px; }
+.qrcode p a { color: #50c0e9; font-size: 13px; }
+.qrcode .close { width: 34px; height: 34px; line-height: 34px; text-align: center; font-size: 18px; color: #fff; background: #333; border: 2px solid #fff; border-radius: 50%; display: block; position: absolute; top: -17px; right: -17px; }
+.qrcode .close.mac { left: 0; }
+.wechat_qrcode { width:240px; height:240px; display:none; }
