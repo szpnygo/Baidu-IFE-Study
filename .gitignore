@@ -1,6 +1,18 @@
 
+<<<<<<< HEAD
 .idea/.name
 
 *.iml
 
 *.xml
+=======
+*.iml
+
+*.xml
+
+.idea/.name
+
+*.xml
+
+.idea/workspace.xml
+>>>>>>> master
