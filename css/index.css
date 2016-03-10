@@ -27,9 +27,14 @@ header article.v.ic {  width: 32px;  height: 32px;  line-height: 32px;  font-siz
 -webkit-box-shadow: #f1f1f1 0px 0px 10px;-moz-box-shadow: #f1f1f1 0px 0px 10px;box-shadow: #f1f1f1 5px 5px 10px;}
 
 .content .member {margin-top: 32px;}
-.content .member img{ width: 72px;height: 72px;position: relative;border-radius: 50%;margin: 8px;}
+.content .member img{ width: 72px;height: 72px;position: relative;border-radius: 50%;margin: 8px;-webkit-transition-duration: 0.5s;-moz-transition-duration: 0.5s;}
+.content .member img:hover{ width: 108px;height: 108px;margin: 4px;position: relative;}
 .content .member h3{line-height: 24px;}
-.content .member h4{color: #777; font-size: 14px;}
+.content .member h4{color: #777; font-size: 14px;line-height: 24px;}
+.content .member p{ margin: 8px;color: #777; font-size: 14px;letter-spacing: 1px;line-height: 18px;height: 80px;}
+
+
+
 /* footer */
 footer, footer a {  font-size: 13px;  color: #333;  margin: 0 8px;  }
 footer a:hover {  text-decoration: underline;  }
