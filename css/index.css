@@ -3,12 +3,17 @@ a { -webkit-transition: all .2s ease-in-out 0s; transition: all .2s ease-in-out 
 
 /* header */
 header {  background: url(../images/bg.jpg) no-repeat scroll right bottom / cover;  }
-header section {  width: 960px;  position: absolute;  top: 38.2%;  left: 50%;  margin: -160px 0 0 -480px;  }
+header section {  width: 400px;  position: absolute;  top: 25%;  left: 15%;  margin: 0px 0 0 0px;color: #000;  }
+@media (max-width: 500px) {
+    header section{
+        left: 5%;
+    }
+}
 header h1 {  font-size: 72px !important;  line-height: 96px;  }
 header h2 {  font-size: 36px !important;  line-height: 48px;  }
 header nav ul li a, header h1, header h2 {  text-shadow: 0 1px 1px rgba(0, 0, 0, .5);  }
 header nav {  width: 100%;  height: 96px;  background: url(../images/nav_bg.svg) no-repeat;  position: relative;  z-index: 99;  }
-header nav ul {  width: 1000px;  margin: 0 auto;  }
+header nav ul {  width: 100%;  margin: 0 auto;  }
 header nav ul li {  float: right;  margin: 8px;  }
 header nav ul li a {  line-height: 72px;  padding: 16px;  border-radius: 4px;  color: #fff;  }
 header nav ul li a:hover {  background-color: rgba(0, 0, 0, .3);  }
@@ -24,13 +29,14 @@ header article.v.ic {  width: 32px;  height: 32px;  line-height: 32px;  font-siz
 
 /* content */
 .content { text-align: center;}
-.content section{ width: 100%; height: 320px; position: relative; overflow: hidden;float: left}
+.content section{ width: 100%; position: relative; overflow: hidden;float: left}
 .content h1{font-size: 48px !important;  line-height: 128px;  }
+
 
 .content .members ul{ margin: 0 auto}
 .content .members ul li{ float: left; margin: 0;width: 20%;}
 
-.content .member{background: #f6f6f6;border-radius: 12px;margin: 16px;border: 1px solid #eee;-webkit-border-radius: 12px;-moz-border-radius: 12px;
+.content .member{background: #f6f6f6;border-radius: 12px;margin: 0px;border: 1px solid #eee;-webkit-border-radius: 12px;-moz-border-radius: 12px;
     -webkit-box-shadow: #f1f1f1 5px 5px 10px;-moz-box-shadow: #f1f1f1 5px 5px 10px;box-shadow: #f1f1f1 5px 5px 10px;}
 .content .member {margin-top: 32px;}
 .content .member img{ width: 72px;height: 72px;position: relative;border-radius: 50%;margin: 8px;-webkit-transition-duration: 0.5s;-moz-transition-duration: 0.5s;}
@@ -38,8 +44,13 @@ header article.v.ic {  width: 32px;  height: 32px;  line-height: 32px;  font-siz
 .content .member h3{line-height: 24px;}
 .content .member h4{color: #777; font-size: 14px;line-height: 24px;}
 .content .member p{ margin: 8px;color: #777; font-size: 14px;letter-spacing: 1px;line-height: 18px;height: 80px;}
+@media (max-width: 992px){
+    .content .member p{
+        height: 40px;
+    }
+}
 
-.content .describe{ margin: 0 auto;height: 400px;}
+.content .describe{ margin: 0 auto;}
 .content .describe p{color: #333; font-size: 16px;line-height: 22px;letter-spacing: 1px;margin: 8px 32px 32px 32px;padding: 16px;}
 .content .describe p{background: #f6f6f6;border-radius: 12px;margin: 16px;border: 1px solid #eee;-webkit-border-radius: 12px;-moz-border-radius: 12px;
     -webkit-box-shadow: #f1f1f1 5px 5px 10px;-moz-box-shadow: #f1f1f1 5px 5px 10px;box-shadow: #f1f1f1 5px 5px 10px;}
@@ -62,3 +73,4 @@ footer a:hover {  text-decoration: underline;  }
 .qrcode .close { width: 34px; height: 34px; line-height: 34px; text-align: center; font-size: 18px; color: #fff; background: #333; border: 2px solid #fff; border-radius: 50%; display: block; position: absolute; top: -17px; right: -17px; }
 .qrcode .close.mac { left: 0; }
 .wechat_qrcode { width:240px; height:240px; display:none; }
+
