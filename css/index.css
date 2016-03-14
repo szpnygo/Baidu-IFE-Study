@@ -104,4 +104,5 @@ footer a:hover {  text-decoration: underline;  }
 @media (max-width: 670px) {
     #timeline .timeline-item-left:before{display: none;}
     #timeline .timeline-item-right:before{display: none;}
+    #timeline .bg{-webkit-box-shadow: #eee 2px 2px 2px;-moz-box-shadow: #eee 2px 2px 2px;box-shadow: #eee 2px 2px 2px;  }
 }
